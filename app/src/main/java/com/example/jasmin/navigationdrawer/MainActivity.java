@@ -3,9 +3,6 @@ package com.example.jasmin.navigationdrawer;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.ActionBar;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -22,7 +19,6 @@ import com.example.jasmin.navigationdrawer.fragment.AboutUsFragment;
 import com.example.jasmin.navigationdrawer.fragment.ContactUsFragment;
 import com.example.jasmin.navigationdrawer.fragment.HistoryFragment;
 import com.example.jasmin.navigationdrawer.fragment.MainFragment;
-import com.example.jasmin.navigationdrawer.fragment.MyCarsFragment;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -69,9 +65,7 @@ public class MainActivity extends AppCompatActivity
 
                 if(item.equals("History")) {
                     fragment = new HistoryFragment();
-                } else if(item.equals("My Cars")) {
-                    fragment = new MyCarsFragment();
-                }else if(item.equals("About Us")) {
+                } else if(item.equals("About Us")) {
                     fragment = new AboutUsFragment();
                 } else if(item.equals("Contact Us")) {
                     fragment = new ContactUsFragment();
